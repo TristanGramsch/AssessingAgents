@@ -1,0 +1,442 @@
+{
+  "type": "CityJSON",
+  "version": "2.0",
+  "metadata": {
+    "title": "Tralaland Buildings",
+    "referenceSystem": "local-meters",
+    "geographicalExtent": [
+      0,
+      0,
+      0,
+      1000,
+      700,
+      20
+    ]
+  },
+  "CityObjects": {
+    "B-P1": {
+      "type": "Building",
+      "attributes": {
+        "parcel_id": "P1",
+        "address": "12 Park Lane",
+        "function": "residential",
+        "storeys": 2,
+        "height_m": 7.5,
+        "floor_area_m2": 180,
+        "footprint_m2": 95,
+        "units": 1,
+        "bedrooms": 4,
+        "year_built": 1998,
+        "last_renovation": 2019,
+        "construction": "brick",
+        "roof_type": "gable",
+        "energy_rating": "B",
+        "condition": "good",
+        "heating": "gas"
+      }
+    },
+    "B-P2": {
+      "type": "Building",
+      "attributes": {
+        "parcel_id": "P2",
+        "address": "3 Harbor Street",
+        "function": "residential",
+        "storeys": 1,
+        "height_m": 4.0,
+        "floor_area_m2": 95,
+        "footprint_m2": 95,
+        "units": 1,
+        "bedrooms": 2,
+        "year_built": 1974,
+        "last_renovation": 1995,
+        "construction": "timber",
+        "roof_type": "flat",
+        "energy_rating": "E",
+        "condition": "fair",
+        "heating": "electric",
+        "flood_risk": "high"
+      }
+    },
+    "B-P3": {
+      "type": "Building",
+      "attributes": {
+        "parcel_id": "P3",
+        "address": "50 Main Street",
+        "function": "commercial",
+        "storeys": 4,
+        "height_m": 16.0,
+        "floor_area_m2": 1200,
+        "footprint_m2": 320,
+        "units": 8,
+        "year_built": 2015,
+        "last_renovation": 2015,
+        "construction": "concrete",
+        "roof_type": "flat",
+        "energy_rating": "A",
+        "condition": "excellent",
+        "heating": "heat_pump",
+        "use_detail": "retail_office"
+      }
+    },
+    "B-P4": {
+      "type": "Building",
+      "attributes": {
+        "parcel_id": "P4",
+        "address": "8 Oak Avenue",
+        "function": "residential",
+        "storeys": 2,
+        "height_m": 7.0,
+        "floor_area_m2": 160,
+        "footprint_m2": 90,
+        "units": 1,
+        "bedrooms": 3,
+        "year_built": 2006,
+        "last_renovation": 2006,
+        "construction": "brick",
+        "roof_type": "hip",
+        "energy_rating": "C",
+        "condition": "good",
+        "heating": "gas"
+      }
+    },
+    "B-P5": {
+      "type": "Building",
+      "attributes": {
+        "parcel_id": "P5",
+        "address": "90 Harbor Street",
+        "function": "commercial",
+        "storeys": 3,
+        "height_m": 12.0,
+        "floor_area_m2": 800,
+        "footprint_m2": 300,
+        "units": 5,
+        "year_built": 1989,
+        "last_renovation": 2011,
+        "construction": "steel",
+        "roof_type": "flat",
+        "energy_rating": "C",
+        "condition": "fair",
+        "heating": "gas",
+        "use_detail": "warehouse_retail",
+        "flood_risk": "high"
+      }
+    },
+    "B-P6": {
+      "type": "Building",
+      "attributes": {
+        "parcel_id": "P6",
+        "address": "120 Harbor Street",
+        "function": "commercial",
+        "storeys": 4,
+        "height_m": 14.1,
+        "floor_area_m2": 1200,
+        "footprint_m2": 300,
+        "units": 5,
+        "year_built": 2003,
+        "last_renovation": 2008,
+        "construction": "timber",
+        "roof_type": "flat",
+        "energy_rating": "B",
+        "condition": "good",
+        "heating": "gas",
+        "use_detail": "retail_office",
+        "flood_risk": "high"
+      }
+    },
+    "B-P7": {
+      "type": "Building",
+      "attributes": {
+        "parcel_id": "P7",
+        "address": "150 Harbor Street",
+        "function": "residential",
+        "storeys": 1,
+        "height_m": 3.9,
+        "floor_area_m2": 85,
+        "footprint_m2": 85,
+        "units": 1,
+        "year_built": 1981,
+        "last_renovation": 1988,
+        "construction": "timber",
+        "roof_type": "gable",
+        "energy_rating": "D",
+        "condition": "poor",
+        "heating": "gas",
+        "bedrooms": 3,
+        "flood_risk": "high"
+      }
+    },
+    "B-P8": {
+      "type": "Building",
+      "attributes": {
+        "parcel_id": "P8",
+        "address": "70 Main Street",
+        "function": "commercial",
+        "storeys": 3,
+        "height_m": 10.7,
+        "floor_area_m2": 1020,
+        "footprint_m2": 340,
+        "units": 8,
+        "year_built": 2012,
+        "last_renovation": 2023,
+        "construction": "concrete",
+        "roof_type": "gable",
+        "energy_rating": "A",
+        "condition": "excellent",
+        "heating": "electric",
+        "use_detail": "office"
+      }
+    },
+    "B-P9": {
+      "type": "Building",
+      "attributes": {
+        "parcel_id": "P9",
+        "address": "95 Main Street",
+        "function": "residential",
+        "storeys": 1,
+        "height_m": 3.9,
+        "floor_area_m2": 90,
+        "footprint_m2": 90,
+        "units": 1,
+        "year_built": 1999,
+        "last_renovation": 1999,
+        "construction": "concrete",
+        "roof_type": "gable",
+        "energy_rating": "C",
+        "condition": "fair",
+        "heating": "gas",
+        "bedrooms": 5
+      }
+    },
+    "B-P10": {
+      "type": "Building",
+      "attributes": {
+        "parcel_id": "P10",
+        "address": "24 Park Lane",
+        "function": "residential",
+        "storeys": 2,
+        "height_m": 7.3,
+        "floor_area_m2": 190,
+        "footprint_m2": 95,
+        "units": 1,
+        "year_built": 2009,
+        "last_renovation": 2009,
+        "construction": "brick",
+        "roof_type": "flat",
+        "energy_rating": "B",
+        "condition": "good",
+        "heating": "district",
+        "bedrooms": 2
+      }
+    },
+    "B-P11": {
+      "type": "Building",
+      "attributes": {
+        "parcel_id": "P11",
+        "address": "40 Park Lane",
+        "function": "residential",
+        "storeys": 1,
+        "height_m": 3.9,
+        "floor_area_m2": 95,
+        "footprint_m2": 95,
+        "units": 1,
+        "year_built": 2017,
+        "last_renovation": 2023,
+        "construction": "concrete",
+        "roof_type": "flat",
+        "energy_rating": "A",
+        "condition": "excellent",
+        "heating": "electric",
+        "bedrooms": 2
+      }
+    },
+    "B-P12": {
+      "type": "Building",
+      "attributes": {
+        "parcel_id": "P12",
+        "address": "5 Garden Avenue",
+        "function": "residential",
+        "storeys": 1,
+        "height_m": 3.9,
+        "floor_area_m2": 95,
+        "footprint_m2": 95,
+        "units": 1,
+        "year_built": 1968,
+        "last_renovation": 1968,
+        "construction": "brick",
+        "roof_type": "gable",
+        "energy_rating": "E",
+        "condition": "poor",
+        "heating": "gas",
+        "bedrooms": 5
+      }
+    },
+    "B-P13": {
+      "type": "Building",
+      "attributes": {
+        "parcel_id": "P13",
+        "address": "11 Garden Avenue",
+        "function": "residential",
+        "storeys": 3,
+        "height_m": 10.7,
+        "floor_area_m2": 285,
+        "footprint_m2": 95,
+        "units": 1,
+        "year_built": 1972,
+        "last_renovation": 1972,
+        "construction": "timber",
+        "roof_type": "hip",
+        "energy_rating": "E",
+        "condition": "poor",
+        "heating": "heat_pump",
+        "bedrooms": 3
+      }
+    },
+    "B-P14": {
+      "type": "Building",
+      "attributes": {
+        "parcel_id": "P14",
+        "address": "20 Garden Avenue",
+        "function": "commercial",
+        "storeys": 2,
+        "height_m": 7.3,
+        "floor_area_m2": 600,
+        "footprint_m2": 300,
+        "units": 8,
+        "year_built": 2008,
+        "last_renovation": 2024,
+        "construction": "timber",
+        "roof_type": "gable",
+        "energy_rating": "A",
+        "condition": "excellent",
+        "heating": "district",
+        "use_detail": "office"
+      }
+    },
+    "B-P15": {
+      "type": "Building",
+      "attributes": {
+        "parcel_id": "P15",
+        "address": "33 Garden Avenue",
+        "function": "residential",
+        "storeys": 3,
+        "height_m": 10.7,
+        "floor_area_m2": 270,
+        "footprint_m2": 90,
+        "units": 1,
+        "year_built": 1995,
+        "last_renovation": 1995,
+        "construction": "concrete",
+        "roof_type": "gable",
+        "energy_rating": "C",
+        "condition": "fair",
+        "heating": "electric",
+        "bedrooms": 2
+      }
+    },
+    "B-P16": {
+      "type": "Building",
+      "attributes": {
+        "parcel_id": "P16",
+        "address": "45 Garden Avenue",
+        "function": "residential",
+        "storeys": 2,
+        "height_m": 7.3,
+        "floor_area_m2": 170,
+        "footprint_m2": 85,
+        "units": 1,
+        "year_built": 1988,
+        "last_renovation": 2018,
+        "construction": "timber",
+        "roof_type": "flat",
+        "energy_rating": "A",
+        "condition": "good",
+        "heating": "heat_pump",
+        "bedrooms": 3
+      }
+    },
+    "B-P17": {
+      "type": "Building",
+      "attributes": {
+        "parcel_id": "P17",
+        "address": "7 North Road",
+        "function": "residential",
+        "storeys": 3,
+        "height_m": 10.7,
+        "floor_area_m2": 315,
+        "footprint_m2": 105,
+        "units": 1,
+        "year_built": 2001,
+        "last_renovation": 2018,
+        "construction": "timber",
+        "roof_type": "hip",
+        "energy_rating": "A",
+        "condition": "good",
+        "heating": "electric",
+        "bedrooms": 3
+      }
+    },
+    "B-P18": {
+      "type": "Building",
+      "attributes": {
+        "parcel_id": "P18",
+        "address": "15 North Road",
+        "function": "residential",
+        "storeys": 2,
+        "height_m": 7.3,
+        "floor_area_m2": 210,
+        "footprint_m2": 105,
+        "units": 1,
+        "year_built": 1979,
+        "last_renovation": 2018,
+        "construction": "steel",
+        "roof_type": "hip",
+        "energy_rating": "A",
+        "condition": "good",
+        "heating": "electric",
+        "bedrooms": 3
+      }
+    },
+    "B-P19": {
+      "type": "Building",
+      "attributes": {
+        "parcel_id": "P19",
+        "address": "22 North Road",
+        "function": "commercial",
+        "storeys": 2,
+        "height_m": 7.3,
+        "floor_area_m2": 520,
+        "footprint_m2": 260,
+        "units": 5,
+        "year_built": 2014,
+        "last_renovation": 2019,
+        "construction": "timber",
+        "roof_type": "flat",
+        "energy_rating": "A",
+        "condition": "good",
+        "heating": "district",
+        "use_detail": "retail_office"
+      }
+    },
+    "B-P20": {
+      "type": "Building",
+      "attributes": {
+        "parcel_id": "P20",
+        "address": "31 North Road",
+        "function": "residential",
+        "storeys": 3,
+        "height_m": 10.7,
+        "floor_area_m2": 315,
+        "footprint_m2": 105,
+        "units": 1,
+        "year_built": 2010,
+        "last_renovation": 2010,
+        "construction": "concrete",
+        "roof_type": "flat",
+        "energy_rating": "B",
+        "condition": "good",
+        "heating": "gas",
+        "bedrooms": 2
+      }
+    }
+  }
+}

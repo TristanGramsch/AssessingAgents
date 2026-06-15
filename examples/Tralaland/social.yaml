@@ -1,0 +1,205 @@
+# Tralaland — Social layer: ownership & sales history
+# Joins to geography.geojson and buildings.cityjson via parcel_id.
+# Rules:
+#   - owners are referenced by owner_id (never by name) from the registry below
+#   - sales_history is chronological; each sale's seller == previous sale's buyer
+#   - a parcel's current_owner == the buyer of its most recent sale
+#   - prices are in TRL (Tralaland credits)
+
+meta:
+  currency: TRL
+  layer: social
+  joins_on: parcel_id
+
+owners:
+  O1: { name: "Aria Conti", type: "person" }
+  O2: { name: "Marco Vitale", type: "person" }
+  O3: { name: "Delpaso Holdings", type: "company" }
+  O4: { name: "Lena Brunner", type: "person" }
+  O5: { name: "Tarra Developments Ltd", type: "company", role: "developer" }
+  O6: { name: "Giulia Romano", type: "person" }
+  O7: { name: "Sahur Estates LLC", type: "company", role: "developer" }
+  O8: { name: "Tomas Lindgren", type: "person" }
+  O9: { name: "Bombardino Trust", type: "company" }
+  O10: { name: "Priya Nair", type: "person" }
+  O11: { name: "Otto Schmidt", type: "person" }
+  O12: { name: "Nguyen Family Trust", type: "company" }
+  O13: { name: "Hana Okafor", type: "person" }
+  O14: { name: "Diego Santos", type: "person" }
+  O15: { name: "Freya Holm", type: "person" }
+  O16: { name: "Ravi Menon", type: "person" }
+  O17: { name: "Sofia Costa", type: "person" }
+  O18: { name: "Liam Walsh", type: "person" }
+  O19: { name: "Mei Tanaka", type: "person" }
+  O20: { name: "Karl Novak", type: "person" }
+  O21: { name: "Amara Diallo", type: "person" }
+  O22: { name: "Elena Popova", type: "person" }
+  O23: { name: "Jonas Berg", type: "person" }
+  O24: { name: "Yara Haddad", type: "person" }
+  O25: { name: "Pavel Ruiz", type: "person" }
+  O26: { name: "Ingrid Falk", type: "person" }
+  O27: { name: "Noah Bauer", type: "person" }
+  O28: { name: "Clara Esposito", type: "person" }
+  O29: { name: "Northgate Builders", type: "company", role: "developer" }
+  O30: { name: "Tralala Capital", type: "company" }
+  O31: { name: "Lirili Property Group", type: "company" }
+  O32: { name: "Crocodilo Estates", type: "company" }
+  O33: { name: "Cappuccino Trust", type: "company" }
+  O34: { name: "Garden Row Holdings", type: "company" }
+
+parcels:
+
+  P1:
+    address: "12 Park Lane"
+    current_owner: O10
+    sales_history:
+      - { date: "1998-07-20", seller: "O5", buyer: "O6", price: 210000, instrument: "deed" }
+      - { date: "2007-03-11", seller: "O6", buyer: "O8", price: 365000, instrument: "deed" }
+      - { date: "2019-05-28", seller: "O8", buyer: "O10", price: 520000, instrument: "deed" }
+
+  P2:
+    address: "3 Harbor Street"
+    current_owner: O1
+    sales_history:
+      - { date: "1974-06-15", seller: "O5", buyer: "O11", price: 60000, instrument: "deed" }
+      - { date: "1989-09-02", seller: "O11", buyer: "O2", price: 142000, instrument: "deed" }
+      - { date: "2003-04-18", seller: "O2", buyer: "O4", price: 268000, instrument: "deed" }
+      - { date: "2018-11-07", seller: "O4", buyer: "O1", price: 395000, instrument: "deed" }
+
+  P3:
+    address: "50 Main Street"
+    current_owner: O3
+    sales_history:
+      - { date: "2015-09-01", seller: "O7", buyer: "O9", price: 980000, instrument: "deed" }
+      - { date: "2020-02-19", seller: "O9", buyer: "O3", price: 1450000, instrument: "deed" }
+
+  P4:
+    address: "8 Oak Avenue"
+    current_owner: O4
+    sales_history:
+      - { date: "2006-08-30", seller: "O5", buyer: "O12", price: 295000, instrument: "deed" }
+      - { date: "2014-10-22", seller: "O12", buyer: "O2", price: 388000, instrument: "deed" }
+      - { date: "2021-06-14", seller: "O2", buyer: "O4", price: 455000, instrument: "deed" }
+
+  P5:
+    address: "90 Harbor Street"
+    current_owner: O7
+    sales_history:
+      - { date: "1989-05-05", seller: "O7", buyer: "O11", price: 410000, instrument: "deed" }
+      - { date: "2001-12-03", seller: "O11", buyer: "O3", price: 620000, instrument: "deed" }
+      - { date: "2011-07-26", seller: "O3", buyer: "O7", price: 845000, instrument: "deed" }
+
+  P6:
+    address: "120 Harbor Street"
+    current_owner: O20
+    sales_history:
+      - { date: "2005-05-14", seller: "O29", buyer: "O4", price: 989000, instrument: "deed" }
+      - { date: "2011-12-09", seller: "O4", buyer: "O27", price: 1438000, instrument: "deed" }
+      - { date: "2023-02-28", seller: "O27", buyer: "O20", price: 2291000, instrument: "deed" }
+
+  P7:
+    address: "150 Harbor Street"
+    current_owner: O24
+    sales_history:
+      - { date: "1982-03-18", seller: "O5", buyer: "O14", price: 251000, instrument: "deed" }
+      - { date: "1994-06-16", seller: "O14", buyer: "O23", price: 418000, instrument: "deed" }
+      - { date: "1998-05-08", seller: "O23", buyer: "O15", price: 543000, instrument: "deed" }
+      - { date: "2002-02-03", seller: "O15", buyer: "O24", price: 738000, instrument: "deed" }
+
+  P8:
+    address: "70 Main Street"
+    current_owner: O22
+    sales_history:
+      - { date: "2015-09-06", seller: "O5", buyer: "O34", price: 1095000, instrument: "deed" }
+      - { date: "2023-07-07", seller: "O34", buyer: "O22", price: 1629000, instrument: "deed" }
+
+  P9:
+    address: "95 Main Street"
+    current_owner: O1
+    sales_history:
+      - { date: "2002-11-12", seller: "O7", buyer: "O24", price: 201000, instrument: "deed" }
+      - { date: "2013-02-08", seller: "O24", buyer: "O17", price: 333000, instrument: "deed" }
+      - { date: "2020-10-18", seller: "O17", buyer: "O1", price: 425000, instrument: "deed" }
+
+  P10:
+    address: "24 Park Lane"
+    current_owner: O11
+    sales_history:
+      - { date: "2009-02-02", seller: "O29", buyer: "O10", price: 151000, instrument: "deed" }
+      - { date: "2018-05-22", seller: "O10", buyer: "O11", price: 194000, instrument: "deed" }
+
+  P11:
+    address: "40 Park Lane"
+    current_owner: O10
+    sales_history:
+      - { date: "2020-08-26", seller: "O29", buyer: "O10", price: 183000, instrument: "deed" }
+
+  P12:
+    address: "5 Garden Avenue"
+    current_owner: O18
+    sales_history:
+      - { date: "1970-07-15", seller: "O7", buyer: "O16", price: 174000, instrument: "deed" }
+      - { date: "1974-02-02", seller: "O16", buyer: "O24", price: 270000, instrument: "deed" }
+      - { date: "1984-02-08", seller: "O24", buyer: "O31", price: 426000, instrument: "deed" }
+      - { date: "1991-03-14", seller: "O31", buyer: "O18", price: 569000, instrument: "deed" }
+
+  P13:
+    address: "11 Garden Avenue"
+    current_owner: O34
+    sales_history:
+      - { date: "1972-11-18", seller: "O7", buyer: "O2", price: 213000, instrument: "deed" }
+      - { date: "1976-04-06", seller: "O2", buyer: "O34", price: 359000, instrument: "deed" }
+
+  P14:
+    address: "20 Garden Avenue"
+    current_owner: O30
+    sales_history:
+      - { date: "2009-01-13", seller: "O5", buyer: "O15", price: 768000, instrument: "deed" }
+      - { date: "2017-08-10", seller: "O15", buyer: "O30", price: 1280000, instrument: "deed" }
+
+  P15:
+    address: "33 Garden Avenue"
+    current_owner: O34
+    sales_history:
+      - { date: "1998-04-10", seller: "O29", buyer: "O6", price: 292000, instrument: "deed" }
+      - { date: "2005-12-18", seller: "O6", buyer: "O22", price: 492000, instrument: "deed" }
+      - { date: "2009-01-19", seller: "O22", buyer: "O2", price: 781000, instrument: "deed" }
+      - { date: "2020-09-06", seller: "O2", buyer: "O34", price: 1153000, instrument: "deed" }
+
+  P16:
+    address: "45 Garden Avenue"
+    current_owner: O21
+    sales_history:
+      - { date: "1988-04-13", seller: "O5", buyer: "O24", price: 170000, instrument: "deed" }
+      - { date: "1993-04-19", seller: "O24", buyer: "O21", price: 285000, instrument: "deed" }
+
+  P17:
+    address: "7 North Road"
+    current_owner: O28
+    sales_history:
+      - { date: "2003-05-07", seller: "O29", buyer: "O33", price: 257000, instrument: "deed" }
+      - { date: "2012-03-22", seller: "O33", buyer: "O15", price: 349000, instrument: "deed" }
+      - { date: "2020-02-01", seller: "O15", buyer: "O28", price: 508000, instrument: "deed" }
+
+  P18:
+    address: "15 North Road"
+    current_owner: O33
+    sales_history:
+      - { date: "1980-05-05", seller: "O5", buyer: "O19", price: 294000, instrument: "deed" }
+      - { date: "1989-04-12", seller: "O19", buyer: "O33", price: 484000, instrument: "deed" }
+
+  P19:
+    address: "22 North Road"
+    current_owner: O8
+    sales_history:
+      - { date: "2014-09-10", seller: "O29", buyer: "O24", price: 859000, instrument: "deed" }
+      - { date: "2019-05-04", seller: "O24", buyer: "O6", price: 1437000, instrument: "deed" }
+      - { date: "2024-05-10", seller: "O6", buyer: "O8", price: 2276000, instrument: "deed" }
+
+  P20:
+    address: "31 North Road"
+    current_owner: O6
+    sales_history:
+      - { date: "2012-08-09", seller: "O29", buyer: "O19", price: 202000, instrument: "deed" }
+      - { date: "2016-05-02", seller: "O19", buyer: "O16", price: 261000, instrument: "deed" }
+      - { date: "2020-11-09", seller: "O16", buyer: "O6", price: 365000, instrument: "deed" }

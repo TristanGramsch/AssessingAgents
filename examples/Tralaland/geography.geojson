@@ -1,0 +1,1366 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "local-meters"
+    }
+  },
+  "metadata": {
+    "city": "Tralaland",
+    "units": "meters",
+    "extent": [
+      0,
+      0,
+      1000,
+      700
+    ]
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "parcel",
+        "parcel_id": "P1",
+        "address": "12 Park Lane",
+        "zone": "RES-N",
+        "land_use": "residential",
+        "lot_area_m2": 4800,
+        "frontage_m": 80,
+        "neighborhood": "Lirili Heights"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              340,
+              220
+            ],
+            [
+              420,
+              220
+            ],
+            [
+              420,
+              280
+            ],
+            [
+              340,
+              280
+            ],
+            [
+              340,
+              220
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "parcel",
+        "parcel_id": "P2",
+        "address": "3 Harbor Street",
+        "zone": "WF",
+        "land_use": "residential",
+        "lot_area_m2": 4800,
+        "frontage_m": 80,
+        "neighborhood": "Tarra Waterfront",
+        "flood_zone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              60,
+              60
+            ],
+            [
+              140,
+              60
+            ],
+            [
+              140,
+              120
+            ],
+            [
+              60,
+              120
+            ],
+            [
+              60,
+              60
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "parcel",
+        "parcel_id": "P3",
+        "address": "50 Main Street",
+        "zone": "COM",
+        "land_use": "commercial",
+        "lot_area_m2": 4800,
+        "frontage_m": 80,
+        "neighborhood": "Sahur Core"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              260,
+              140
+            ],
+            [
+              340,
+              140
+            ],
+            [
+              340,
+              200
+            ],
+            [
+              260,
+              200
+            ],
+            [
+              260,
+              140
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "parcel",
+        "parcel_id": "P4",
+        "address": "8 Oak Avenue",
+        "zone": "RES-N",
+        "land_use": "residential",
+        "lot_area_m2": 4800,
+        "frontage_m": 80,
+        "neighborhood": "Lirili Heights"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              110,
+              270
+            ],
+            [
+              190,
+              270
+            ],
+            [
+              190,
+              330
+            ],
+            [
+              110,
+              330
+            ],
+            [
+              110,
+              270
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "parcel",
+        "parcel_id": "P5",
+        "address": "90 Harbor Street",
+        "zone": "WF",
+        "land_use": "commercial",
+        "lot_area_m2": 4800,
+        "frontage_m": 80,
+        "neighborhood": "Tarra Waterfront",
+        "flood_zone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              460,
+              60
+            ],
+            [
+              540,
+              60
+            ],
+            [
+              540,
+              120
+            ],
+            [
+              460,
+              120
+            ],
+            [
+              460,
+              60
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "parcel",
+        "parcel_id": "P6",
+        "address": "120 Harbor Street",
+        "zone": "WF",
+        "land_use": "commercial",
+        "lot_area_m2": 4800,
+        "frontage_m": 80,
+        "neighborhood": "Tarra Waterfront",
+        "flood_zone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              650,
+              60
+            ],
+            [
+              730,
+              60
+            ],
+            [
+              730,
+              120
+            ],
+            [
+              650,
+              120
+            ],
+            [
+              650,
+              60
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "parcel",
+        "parcel_id": "P7",
+        "address": "150 Harbor Street",
+        "zone": "WF",
+        "land_use": "residential",
+        "lot_area_m2": 4800,
+        "frontage_m": 80,
+        "neighborhood": "Tarra Waterfront",
+        "flood_zone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              820,
+              60
+            ],
+            [
+              900,
+              60
+            ],
+            [
+              900,
+              120
+            ],
+            [
+              820,
+              120
+            ],
+            [
+              820,
+              60
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "parcel",
+        "parcel_id": "P8",
+        "address": "70 Main Street",
+        "zone": "COM",
+        "land_use": "commercial",
+        "lot_area_m2": 4800,
+        "frontage_m": 80,
+        "neighborhood": "Sahur Core"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              650,
+              140
+            ],
+            [
+              730,
+              140
+            ],
+            [
+              730,
+              200
+            ],
+            [
+              650,
+              200
+            ],
+            [
+              650,
+              140
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "parcel",
+        "parcel_id": "P9",
+        "address": "95 Main Street",
+        "zone": "COM",
+        "land_use": "residential",
+        "lot_area_m2": 4800,
+        "frontage_m": 80,
+        "neighborhood": "Sahur Core"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              820,
+              140
+            ],
+            [
+              900,
+              140
+            ],
+            [
+              900,
+              200
+            ],
+            [
+              820,
+              200
+            ],
+            [
+              820,
+              140
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "parcel",
+        "parcel_id": "P10",
+        "address": "24 Park Lane",
+        "zone": "RES-N",
+        "land_use": "residential",
+        "lot_area_m2": 4800,
+        "frontage_m": 80,
+        "neighborhood": "Lirili Heights"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              650,
+              270
+            ],
+            [
+              730,
+              270
+            ],
+            [
+              730,
+              330
+            ],
+            [
+              650,
+              330
+            ],
+            [
+              650,
+              270
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "parcel",
+        "parcel_id": "P11",
+        "address": "40 Park Lane",
+        "zone": "RES-N",
+        "land_use": "residential",
+        "lot_area_m2": 4800,
+        "frontage_m": 80,
+        "neighborhood": "Lirili Heights"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              820,
+              270
+            ],
+            [
+              900,
+              270
+            ],
+            [
+              900,
+              330
+            ],
+            [
+              820,
+              330
+            ],
+            [
+              820,
+              270
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "parcel",
+        "parcel_id": "P12",
+        "address": "5 Garden Avenue",
+        "zone": "NG",
+        "land_use": "residential",
+        "lot_area_m2": 4800,
+        "frontage_m": 80,
+        "neighborhood": "Northgate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              60,
+              440
+            ],
+            [
+              140,
+              440
+            ],
+            [
+              140,
+              500
+            ],
+            [
+              60,
+              500
+            ],
+            [
+              60,
+              440
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "parcel",
+        "parcel_id": "P13",
+        "address": "11 Garden Avenue",
+        "zone": "NG",
+        "land_use": "residential",
+        "lot_area_m2": 4800,
+        "frontage_m": 80,
+        "neighborhood": "Northgate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              230,
+              440
+            ],
+            [
+              310,
+              440
+            ],
+            [
+              310,
+              500
+            ],
+            [
+              230,
+              500
+            ],
+            [
+              230,
+              440
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "parcel",
+        "parcel_id": "P14",
+        "address": "20 Garden Avenue",
+        "zone": "NG",
+        "land_use": "commercial",
+        "lot_area_m2": 4800,
+        "frontage_m": 80,
+        "neighborhood": "Northgate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              400,
+              440
+            ],
+            [
+              480,
+              440
+            ],
+            [
+              480,
+              500
+            ],
+            [
+              400,
+              500
+            ],
+            [
+              400,
+              440
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "parcel",
+        "parcel_id": "P15",
+        "address": "33 Garden Avenue",
+        "zone": "NG",
+        "land_use": "residential",
+        "lot_area_m2": 4800,
+        "frontage_m": 80,
+        "neighborhood": "Northgate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              570,
+              440
+            ],
+            [
+              650,
+              440
+            ],
+            [
+              650,
+              500
+            ],
+            [
+              570,
+              500
+            ],
+            [
+              570,
+              440
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "parcel",
+        "parcel_id": "P16",
+        "address": "45 Garden Avenue",
+        "zone": "NG",
+        "land_use": "residential",
+        "lot_area_m2": 4800,
+        "frontage_m": 80,
+        "neighborhood": "Northgate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              740,
+              440
+            ],
+            [
+              820,
+              440
+            ],
+            [
+              820,
+              500
+            ],
+            [
+              740,
+              500
+            ],
+            [
+              740,
+              440
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "parcel",
+        "parcel_id": "P17",
+        "address": "7 North Road",
+        "zone": "NG",
+        "land_use": "residential",
+        "lot_area_m2": 4800,
+        "frontage_m": 80,
+        "neighborhood": "Northgate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              60,
+              560
+            ],
+            [
+              140,
+              560
+            ],
+            [
+              140,
+              620
+            ],
+            [
+              60,
+              620
+            ],
+            [
+              60,
+              560
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "parcel",
+        "parcel_id": "P18",
+        "address": "15 North Road",
+        "zone": "NG",
+        "land_use": "residential",
+        "lot_area_m2": 4800,
+        "frontage_m": 80,
+        "neighborhood": "Northgate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              230,
+              560
+            ],
+            [
+              310,
+              560
+            ],
+            [
+              310,
+              620
+            ],
+            [
+              230,
+              620
+            ],
+            [
+              230,
+              560
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "parcel",
+        "parcel_id": "P19",
+        "address": "22 North Road",
+        "zone": "NG",
+        "land_use": "commercial",
+        "lot_area_m2": 4800,
+        "frontage_m": 80,
+        "neighborhood": "Northgate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              400,
+              560
+            ],
+            [
+              480,
+              560
+            ],
+            [
+              480,
+              620
+            ],
+            [
+              400,
+              620
+            ],
+            [
+              400,
+              560
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "parcel",
+        "parcel_id": "P20",
+        "address": "31 North Road",
+        "zone": "NG",
+        "land_use": "residential",
+        "lot_area_m2": 4800,
+        "frontage_m": 80,
+        "neighborhood": "Northgate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              570,
+              560
+            ],
+            [
+              650,
+              560
+            ],
+            [
+              650,
+              620
+            ],
+            [
+              570,
+              620
+            ],
+            [
+              570,
+              560
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "zone",
+        "zone": "RES-N",
+        "name": "Lirili Heights",
+        "density": "low"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0,
+              230
+            ],
+            [
+              1000,
+              230
+            ],
+            [
+              1000,
+              410
+            ],
+            [
+              0,
+              410
+            ],
+            [
+              0,
+              230
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "zone",
+        "zone": "COM",
+        "name": "Sahur Core",
+        "density": "high"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0,
+              130
+            ],
+            [
+              1000,
+              130
+            ],
+            [
+              1000,
+              230
+            ],
+            [
+              0,
+              230
+            ],
+            [
+              0,
+              130
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "zone",
+        "zone": "WF",
+        "name": "Tarra Waterfront",
+        "density": "medium",
+        "flood_zone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0,
+              50
+            ],
+            [
+              1000,
+              50
+            ],
+            [
+              1000,
+              130
+            ],
+            [
+              0,
+              130
+            ],
+            [
+              0,
+              50
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "zone",
+        "zone": "NG",
+        "name": "Northgate",
+        "density": "low"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0,
+              410
+            ],
+            [
+              1000,
+              410
+            ],
+            [
+              1000,
+              700
+            ],
+            [
+              0,
+              700
+            ],
+            [
+              0,
+              410
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "water",
+        "name": "Tarra River",
+        "feature_type": "river"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0,
+              0
+            ],
+            [
+              1000,
+              0
+            ],
+            [
+              1000,
+              50
+            ],
+            [
+              0,
+              50
+            ],
+            [
+              0,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "park",
+        "name": "Lirili Park",
+        "area_m2": 4800,
+        "amenities": [
+          "playground",
+          "green"
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              360,
+              300
+            ],
+            [
+              440,
+              300
+            ],
+            [
+              440,
+              360
+            ],
+            [
+              360,
+              360
+            ],
+            [
+              360,
+              300
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "park",
+        "name": "Northgate Green",
+        "area_m2": 4500,
+        "amenities": [
+          "green"
+        ]
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              470,
+              630
+            ],
+            [
+              560,
+              630
+            ],
+            [
+              560,
+              685
+            ],
+            [
+              470,
+              685
+            ],
+            [
+              470,
+              630
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "school",
+        "name": "Bombardino Primary",
+        "capacity": 320,
+        "rating": 7.5
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              40,
+              150
+            ],
+            [
+              120,
+              150
+            ],
+            [
+              120,
+              200
+            ],
+            [
+              40,
+              200
+            ],
+            [
+              40,
+              150
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "school",
+        "name": "Northgate School",
+        "capacity": 280,
+        "rating": 6.8
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              820,
+              560
+            ],
+            [
+              900,
+              560
+            ],
+            [
+              900,
+              620
+            ],
+            [
+              820,
+              620
+            ],
+            [
+              820,
+              560
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "transit",
+        "name": "Sahur Station",
+        "mode": "metro",
+        "lines": [
+          "Blue"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          300,
+          210
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "transit",
+        "name": "Northgate Halt",
+        "mode": "metro",
+        "lines": [
+          "Blue"
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          450,
+          410
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "road",
+        "name": "Main Street",
+        "road_class": "arterial",
+        "lanes": 4
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0,
+            210
+          ],
+          [
+            1000,
+            210
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "road",
+        "name": "Harbor Street",
+        "road_class": "collector",
+        "lanes": 2
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0,
+            130
+          ],
+          [
+            1000,
+            130
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "road",
+        "name": "Garden Avenue",
+        "road_class": "collector",
+        "lanes": 2
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0,
+            410
+          ],
+          [
+            1000,
+            410
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "road",
+        "name": "North Road",
+        "road_class": "local",
+        "lanes": 2
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0,
+            540
+          ],
+          [
+            1000,
+            540
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "road",
+        "name": "Oak Avenue",
+        "road_class": "local",
+        "lanes": 2
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            230,
+            0
+          ],
+          [
+            230,
+            700
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "road",
+        "name": "Park Avenue",
+        "road_class": "local",
+        "lanes": 2
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            450,
+            0
+          ],
+          [
+            450,
+            700
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "road",
+        "name": "Elm Avenue",
+        "road_class": "local",
+        "lanes": 2
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            620,
+            0
+          ],
+          [
+            620,
+            700
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "kind": "road",
+        "name": "Quay Avenue",
+        "road_class": "local",
+        "lanes": 2
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            790,
+            0
+          ],
+          [
+            790,
+            700
+          ]
+        ]
+      }
+    }
+  ]
+}

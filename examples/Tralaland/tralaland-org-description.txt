@@ -1,0 +1,235 @@
+Tralaland — Assessment, Appraisal & Taxation
+=============================================
+
+All monetary figures are in TRL (Tralaland Credits).
+All parcel references join on parcel_id from the three source files.
+
+
+PART I — LEGAL LANDSCAPE
+-------------------------
+
+1. Governing Statutes
+
+   Tralaland Property Assessment Act (TPAA)
+     - Requires every parcel to carry an assessed value (AV) refreshed on
+       a fixed cycle (see Part II).
+     - AV is the single legal basis for all ad valorem property taxes.
+
+   Tralaland Revenue Code §§ 400-480 (TRC)
+     - Sets the annual mill rate (tax per 1,000 TRL of AV).
+     - Current base mill rate: 12.5 mills (= 1.25 % of AV per year).
+     - Authorises surcharges: Flood Risk Surcharge (parcels flagged
+       flood_risk: true in buildings.cityjson) adds 1.5 mills.
+
+   Land Registration Ordinance (LRO)
+     - Governs the recording of deeds (the "instrument" field in
+       social.yaml).
+     - Every ownership transfer must be registered before the Assessor
+       may update the owner of record.
+     - Requires disclosure of sale price; that price becomes a key input
+       to the next assessment cycle.
+
+   Zoning & Land Use Code (ZLUC)
+     - Ties permitted use to zone (residential, commercial, mixed,
+       industrial, park/civic) as mapped in geography.geojson.
+     - Determines which exemption classes are available (§ 3 below).
+
+2. Assessment Basis
+
+   Tralaland uses a market-value standard: AV shall not exceed the
+   price a willing buyer and willing seller would agree upon in an
+   arm's-length transaction.  The sales_history in social.yaml is the
+   primary evidence base.  Where sales are sparse (e.g. P3, P5),
+   the Assessor uses income capitalisation (commercial) or the cost
+   approach (industrial/civic).
+
+3. Exemptions (TPAA §§ 70-95)
+
+   Homestead Exemption
+     - Owner-occupied residential parcels where owner_type == "person"
+       and the owner resides at the address.
+     - Reduces AV by 15 % before tax calculation.
+     - Current eligible parcels (person owners): P1, P2, P4, P9, P10,
+       P11, P12, P16, P17, P18, P20 (subject to residency verification).
+
+   Non-Profit / Civic Exemption
+     - Parks and school parcels in geography.geojson are fully exempt.
+
+   Developer Deferral
+     - Parcels whose current_owner carries role: "developer" (O5, O7,
+       O29) are assessed at land value only until a certificate of
+       occupancy is issued.  O7 currently holds P5.
+
+4. Appeal Rights
+
+   Any owner of record may contest an assessment within 60 days of the
+   Notice of Assessment.  The three-tier process is detailed in Part II.
+
+
+PART II — THE ASSESSOR'S OFFICE
+--------------------------------
+
+1. Structure
+
+   Chief Assessor (appointed by the Tralaland Municipal Council, 4-year term)
+     |
+     +-- Deputy Assessor — Residential Division
+     |       Handles zones: residential, mixed-use
+     |       Primary parcels: P1, P2, P4, P7, P9, P10, P11, P12,
+     |                        P13, P15, P16, P17, P18, P20
+     |
+     +-- Deputy Assessor — Commercial / Industrial Division
+     |       Handles zones: commercial, industrial
+     |       Primary parcels: P3, P5, P6, P8, P14, P19
+     |
+     +-- GIS & Data Unit
+     |       Maintains geography.geojson and buildings.cityjson.
+     |       Flags flood_risk, building condition, and square footage
+     |       used as AV adjustment factors.
+     |
+     +-- Registry & Records Unit
+             Syncs with the Land Registration Ordinance.
+             Updates current_owner and sales_history in social.yaml upon
+             deed recording.
+             Issues parcel_id for new lots.
+
+2. Assessment Cycle
+
+   Tralaland operates a triennial (3-year) mass appraisal cycle.
+
+   Year 1 — Data Collection
+     - Field inspectors verify building condition (buildings.cityjson
+       "condition" field) and flag material changes (additions,
+       demolitions, flood damage).
+     - Registry & Records Unit reconciles all deeds recorded since the
+       last cycle and updates social.yaml.
+
+   Year 2 — Valuation Modelling
+     - Statistical mass appraisal model is run using:
+         a) Arm's-length sales from sales_history (weight: 60 %)
+         b) Building attributes: use, area_sqm, stories, condition
+            (weight: 25 %)
+         c) Location / social factors from social.yaml: crime_rate,
+            park_proximity_m, transit_score, school_rating (weight: 15 %)
+     - Draft assessed values are produced for all 20 parcels.
+     - Equity review: sales ratio studies ensure no zone is assessed
+       above 100 % of market value.
+
+   Year 3 — Notice, Appeal & Certification
+     - Notices of Assessment mailed to all owners of record by March 1.
+     - Appeal window: March 1 – April 30 (60 days).
+     - Certified roll delivered to the Tax Collector by June 1.
+     - Tax bills issued July 1; due in two instalments (Oct 1 / Mar 1).
+
+   Between cycles, a supplemental assessment is triggered when:
+     - A deed is recorded (price evidence updates AV proportionally).
+     - A building permit for > 10 % area change is closed.
+     - A flood event changes the flood_risk flag.
+
+3. Annual Cadence (within a cycle year)
+
+   Jan–Feb    Field data collection / deed reconciliation
+   Mar        Notices of Assessment mailed
+   Mar–Apr    Appeal hearings (Informal Review Board)
+   May        Final Assessment Roll published (public record)
+   Jun        Certified roll → Tax Collector
+   Jul        Tax bills issued
+   Oct 1      First instalment due
+   Mar 1      Second instalment due
+
+4. Public Obligations
+
+   Open Records
+     - The Assessment Roll (parcel_id, address, AV, owner of record) is
+       a public document, updated each cycle.
+     - sales_history prices disclosed under the Land Registration
+       Ordinance are public once recorded.
+
+   Public Inspection Period
+     - The draft roll is open for inspection for 30 days before notices
+       are mailed.  Any resident may review any parcel's AV and the
+       methodology used to derive it.
+
+   Annual Report
+     - The Chief Assessor publishes an Annual Assessment Report covering:
+       total taxable value by zone, number of exemptions granted,
+       appeal outcomes, and the sales ratio study results.
+
+5. Appeal Process
+
+   Tier 1 — Informal Review (Assessor's Office)
+     - Owner submits a written request with supporting evidence
+       (comparable sales, independent appraisal, building condition
+       photos) within the 60-day window.
+     - Deputy Assessor reviews and may adjust AV administratively.
+     - Decision issued within 15 business days.
+
+   Tier 2 — Assessment Review Board (ARB)
+     - Independent three-member board appointed by the Municipal Council.
+     - Owner may appeal a Tier 1 denial within 30 days.
+     - Hearing scheduled within 45 days; owner and Assessor both present
+       evidence.
+     - Board may reduce, confirm, or (rarely) increase AV.
+     - Decision is binding on the Assessor unless further appealed.
+
+   Tier 3 — Tralaland Superior Court
+     - Owner may appeal an ARB decision within 60 days on a question of
+       law or on grounds that AV exceeds market value by > 10 %.
+     - Court may appoint an independent referee.
+
+   Appeal does not stay the tax bill; owner pays under protest and
+   receives a refund (with interest at 4 % p.a.) if AV is reduced.
+
+6. Exemption Process
+
+   Step 1 — Application
+     - Owner submits Form AX-1 (Homestead) or AX-2 (Non-Profit/Civic)
+       to the Registry & Records Unit by February 1 of the assessment
+       year.
+     - Required attachments:
+         Homestead: proof of residency (utility bill, voter registration)
+                    matching the parcel address.
+         Non-Profit: certificate of incorporation, proof of qualifying use.
+
+   Step 2 — Review
+     - GIS & Data Unit cross-checks owner_id against social.yaml and
+       verifies occupancy in field inspection records.
+     - Conflicting ownership (e.g. a company holds a parcel claimed as
+       homestead) triggers a deficiency notice; owner has 15 days to cure.
+
+   Step 3 — Determination
+     - Approved exemptions are applied to the draft AV before notices
+       are mailed.
+     - Denied applications carry a 30-day appeal right directly to the
+       Assessment Review Board (skips Tier 1).
+
+   Step 4 — Annual Renewal
+     - Homestead exemptions require a one-page renewal by February 1
+       each year confirming continued owner-occupancy.
+     - Failure to renew results in full AV assessment and a back-tax
+       calculation for the lapsed year.
+
+
+SAMPLE TAX CALCULATIONS (illustrative, current cycle)
+------------------------------------------------------
+
+  P1 — 12 Park Lane (owner O10, Priya Nair, residential)
+    Last sale:  520,000 TRL (2019)
+    AV:         540,000 TRL  (3 % appreciation adjustment)
+    Homestead:  -81,000 TRL  (15 % reduction)
+    Taxable AV: 459,000 TRL
+    Base tax:   459,000 × 0.0125 = 5,737 TRL/yr
+
+  P3 — 50 Main Street (owner O3, Delpaso Holdings, commercial)
+    Last sale:  1,450,000 TRL (2020)
+    AV:         1,560,000 TRL
+    No exemption (company, commercial use)
+    Taxable AV: 1,560,000 TRL
+    Base tax:   1,560,000 × 0.0125 = 19,500 TRL/yr
+
+  P19 — 22 North Road (owner O8, Tomas Lindgren, mixed-use)
+    Last sale:  2,276,000 TRL (2024) — most recent arm's-length deed
+    AV:         2,276,000 TRL  (sale year = assessment year)
+    No homestead (mixed-use zoning)
+    Flood surcharge applies: × (0.0125 + 0.0015) = 0.014
+    Tax:        2,276,000 × 0.014 = 31,864 TRL/yr
