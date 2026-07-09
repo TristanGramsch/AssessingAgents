@@ -2,6 +2,8 @@
 
 An agentic Assessor's office that independently appraises and exempts properties, producing a fairness-seeking tax roll.
 
+[![Watch the video](https://img.youtube.com/vi/D-tFgs3hMRE/maxresdefault.jpg)](https://youtu.be/D-tFgs3hMRE)
+
 ## How it works
 
 The engine is an organization of agents. Each has a profile (who they are) and an instruction (what they do this run). A runner reads these files, feeds them to an LLM with the right context and artifacts, and the agents produce the tax roll. This is pure content, not executable code. 
