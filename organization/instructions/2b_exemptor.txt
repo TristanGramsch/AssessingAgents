@@ -1,0 +1,1 @@
+Read chief-report.txt. Research the exemption rules for this location. Apply them. Produce exemptions/, final-tax-roll.csv, and exemptor-report.txt. Every exemption decision must be traceable back to a rule.

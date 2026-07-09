@@ -1,0 +1,1 @@
+Review the complete tax roll and all supporting work. Judge whether it is fair, complete, and ready for publication. Write review-decision.txt with a clear verdict — APPROVED or REJECTED — and your reasoning. If rejected, state what must be fixed and by whom. Be honest about limitations.

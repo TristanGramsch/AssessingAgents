@@ -4,20 +4,20 @@ Even the best Assessors Office are regressive. This happens for 2 main reasons: 
 
 AssessingAgents offers a state of the art Assessing workflow. To independently appraise and exempt properties. Producing a fairness seeking tax roll, meant to meaningfully inform the real assessment. The only thing you must do, is feed as much data as possible, everything regarding your assessment and exemption process.
 
-Future work: AssessingAgents starts by deeply understanding your Assessor's Office. Your workflows, your boundaries, your exemption rules, your social conditions, your properties and their sales. AssessingAgents then transforms your data into its own model, combining 3 languages for a complete data representation: maps (Geography Markup Language), properties (Building Information Modeling), and social characteristics. Then, AssessingAgents appraises and exempts properties. Then publishes a tax roll and KPIs (COD, PRD, and sales ratios). AssessingAgents iterates until all tresholds are met. 
+AssessingAgents starts by deeply understanding your Assessor's Office. Your workflows, your boundaries, your exemption rules, your social conditions, your properties and their sales. Then, AssessingAgents appraises and exempts properties. Checks KPIs (COD, PRD, and sales ratios). And publishes a tax roll. 
 
-In other words, AssessingAgents is an agentic Assessor's office team, realistically simulating appraisal and exemption.
-You decide when and were. 
+In other words, AssessingAgents is an agentic Assessor's office team, realistically simulating appraisal and exemption. You decide when and where. 
 
 AssessingAgents is a team of 5. 
--Chief assessor: Orchestrator who oversees the team. Talks to the client. Verifies and publishes the tax roll. Educates the public.   
--Assessment data engineer: collects, translates, and prepares data.
--Appraisal learning engineer: investigates, runs experiments, and appraises properties. 
--Exemptions expert: exempts properties based on rules.
+-Chief: Orchestrator who oversees the team. Talks to the client. Verifies and publishes the tax roll.
+-Collector: finds, organizes, and documents all relevant data sources.
+-Appraiser: values every property using established appraisal methods.
+-Exemptor: applies exemption rules and keeps decisions traceable.
+-Educator: produces studies and plain-language reports for the public.
 
 --Why AssessingAgents 
 
-Assessment is a delicate hard job. Assessor's need the power of simulations to perform better and run what if scenarios. 
+Assessment is a delicate hard job. Assessors need the power of simulations to perform better and run what if scenarios. 
 
 --AssessingAgents's culture.
 
@@ -25,7 +25,7 @@ Quick iteration. Ship a lot. Hack.
 
 --AssessingAgents's plan
 
-Demonstrate the power of AssessingAgents for a simulated city, and for Boston. 
+Demonstrated the power of AssessingAgents for a Tralaland. Now we go for Boston. 
 
 --A word on real Assessor's Office.
 
@@ -46,8 +46,12 @@ Assessor's Office then open exemptions with:
 	Stages.
 	Rules. 
 
-And finnally Assessor's Office educate the public:
-	Publish standarized studies.
+And finally Assessor's Office educate the public:
+	Publish standardized studies.
 	Organize events. 
 	
 The final output is the tax roll.  
+
+--Future development
+AssessingAgents will iterate until all KPI thresholds are met. 
+Perhaps AssessingAgents transforms your data into its own model, combining 3 languages for a complete data representation: maps (Geography Markup Language), properties (Building Information Modeling), and social characteristics.

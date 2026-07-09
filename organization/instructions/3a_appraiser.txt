@@ -1,0 +1,1 @@
+Read collector-report.txt, the data schemas, and chief-report.txt. Research modern appraisal methods. Build whatever infrastructure you need — scripts, models, lookup tables — to value every property in the dataset. Produce appraisal/, initial-tax-roll.csv, and appraiser-report.txt explaining your methods.

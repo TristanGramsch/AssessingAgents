@@ -1,0 +1,1 @@
+Read chief-report.txt. Research and document all available data sources for this location: parcels, building classifications, characteristics, sales history. Produce data schemas and collector-report.txt. Your report should tell the Appraiser everything they need to know about the data — its quality, its gaps, how to use it.
